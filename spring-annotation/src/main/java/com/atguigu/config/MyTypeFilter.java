@@ -10,7 +10,6 @@ import org.springframework.core.type.classreading.MetadataReaderFactory;
 import org.springframework.core.type.filter.TypeFilter;
 
 public class MyTypeFilter implements TypeFilter {
-
 	/**
 	 * metadataReader：读取到的当前正在扫描的类的信息
 	 * metadataReaderFactory:可以获取到其他任何类信息的
@@ -25,7 +24,6 @@ public class MyTypeFilter implements TypeFilter {
 		ClassMetadata classMetadata = metadataReader.getClassMetadata();
 		//获取当前类资源（类的路径）
 		Resource resource = metadataReader.getResource();
-		
 		String className = classMetadata.getClassName();
 		System.out.println("--->"+className);
 		if(className.contains("er")){
@@ -33,5 +31,4 @@ public class MyTypeFilter implements TypeFilter {
 		}
 		return false;
 	}
-
 }

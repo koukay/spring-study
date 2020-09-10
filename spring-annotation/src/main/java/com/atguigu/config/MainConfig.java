@@ -28,7 +28,7 @@ import org.springframework.stereotype.Controller;
 //includeFilters = Filter[] ：指定扫描的时候只需要包含哪些组件
 //FilterType.ANNOTATION：按照注解
 //FilterType.ASSIGNABLE_TYPE：按照给定的类型；
-//FilterType.ASPECTJ：使用ASPECTJ表达式
+//FilterType.ASPECTJ：使用ASPECTJ表达式a
 //FilterType.REGEX：使用正则指定
 //FilterType.CUSTOM：使用自定义规则
 public class MainConfig {
